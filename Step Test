@@ -1,0 +1,25 @@
+//It is the proportional size of the image, 1 is the original, -1 is the inverted original. So it's used to change the side of an image, for example image_xscale=+1, which flips the image to the right.
+//vel is the speed variable
+vel=3
+
+if keyboard_check(vk_right)
+{
+	x+=vel
+	image_xscale=+1
+}
+
+if keyboard_check(vk_left)
+{
+	x-=vel
+	image_xscale=-1
+}
+
+if keyboard_check(vk_up)
+{
+	y-=vel
+}
+
+if keyboard_check(vk_down)
+{
+	y+=vel
+}
